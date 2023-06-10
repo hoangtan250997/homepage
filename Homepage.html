@@ -216,9 +216,11 @@
       </div>
     </aside>
 
-    <main class="main-content border-radius-lg">
+    <main
+      class="main-content border-radius-lg"
+      style="-height: 100vh; overflow-y: auto"
+    >
       <!-- Navbar -->
-
       <nav
         class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl"
         id="navbarBlur"
@@ -229,16 +231,16 @@
             class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4"
             id="navbar"
           >
-            
-             
-          </tr>
+            <!-- Type here -->
             <div class="ms-md-auto pe-md-3 d-flex align-items-center">
               <div class="input-group input-group-outline">
                 <label class="form-label">Type here...</label>
                 <input type="text" class="form-control" />
               </div>
             </div>
+            <!-- Unorder list -->
             <ul class="navbar-nav justify-content-end">
+              <!-- Online builder -->
               <li class="nav-item d-flex align-items-center">
                 <a
                   class="btn btn-outline-primary btn-sm mb-0 me-3"
@@ -247,6 +249,7 @@
                   >Online Builder</a
                 >
               </li>
+              <!-- github star -->
               <li class="mt-2">
                 <a
                   class="github-button"
@@ -258,6 +261,7 @@
                   >Star</a
                 >
               </li>
+              <!-- Social media count -->
               <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
                 <a
                   href="javascript:;"
@@ -271,6 +275,7 @@
                   </div>
                 </a>
               </li>
+              <!-- Setting -->
               <li class="nav-item px-3 d-flex align-items-center">
                 <a href="javascript:;" class="nav-link text-body p-0">
                   <i
@@ -278,6 +283,7 @@
                   ></i>
                 </a>
               </li>
+              <!-- Notification -->
               <li class="nav-item dropdown pe-2 d-flex align-items-center">
                 <a
                   href="javascript:;"
@@ -407,6 +413,7 @@
                   </li>
                 </ul>
               </li>
+              <!-- Sign in -->
               <li class="nav-item d-flex align-items-center">
                 <a
                   href="./pages/sign-in.html"
@@ -421,375 +428,170 @@
           </div>
         </div>
       </nav>
-
       <!-- End Navbar -->
 
-      <div class="container py-4">
+      <div class="container">
         <div class="row">
-                <!-- Right column -->
-          <div class="col-9">
-          <div class="col-lg-12 position-relative z-index-2">
-            <div class="card card-plain mb-4">
-              <div class="card-body p-3">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="d-flex flex-column h-100">
-                      <h2 class="font-weight-bolder mb-0">
-6 Cards                      </h2>
+          <!-- Left column -->
+          <div class="col-8">
+            <div class="col-lg-12 position-relative z-index-2">
+              <!-- Name -->
+              <div class="card card-plain mb-4">
+                <div class="card-body p-3">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="d-flex flex-column h-100">
+                        <h2 class="font-weight-bolder mb-0">6 Cards</h2>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-5 col-sm-5">
-                <div class="card mb-2">
-                  <div class="card-header p-3 pt-2">
-                    <div
-                      class="icon icon-lg icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute"
-                    >
-                      <i class="material-icons opacity-10">weekend</i>
-                    </div>
-                    <div class="text-end pt-1">
-                      <p class="text-sm mb-0 text-capitalize">Bookings</p>
-                      <h4 class="mb-0">281</h4>
-                    </div>
-                  </div>
-
-                  <hr class="dark horizontal my-0" />
-                  <div class="card-footer p-3">
-                    <p class="mb-0">
-                      <span class="text-success text-sm font-weight-bolder"
-                        >+55% </span
-                      >than last week
-                    </p>
-                  </div>
-                </div>
-
-                <div class="card mb-2">
-                  <div class="card-header p-3 pt-2">
-                    <div
-                      class="icon icon-lg icon-shape bg-gradient-primary shadow-primary shadow text-center border-radius-xl mt-n4 position-absolute"
-                    >
-                      <i class="material-icons opacity-10">leaderboard</i>
-                    </div>
-                    <div class="text-end pt-1">
-                      <p class="text-sm mb-0 text-capitalize">Today's Users</p>
-                      <h4 class="mb-0">2,300</h4>
-                    </div>
-                  </div>
-
-                  <hr class="dark horizontal my-0" />
-                  <div class="card-footer p-3">
-                    <p class="mb-0">
-                      <span class="text-success text-sm font-weight-bolder"
-                        >+3% </span
-                      >than last month
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5 col-sm-5 mt-sm-0 mt-4">
-                <div class="card mb-2">
-                  <div class="card-header p-3 pt-2 bg-transparent">
-                    <div
-                      class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute"
-                    >
-                      <i class="material-icons opacity-10">store</i>
-                    </div>
-                    <div class="text-end pt-1">
-                      <p class="text-sm mb-0 text-capitalize">Revenue</p>
-                      <h4 class="mb-0">34k</h4>
-                    </div>
-                  </div>
-
-                  <hr class="horizontal my-0 dark" />
-                  <div class="card-footer p-3">
-                    <p class="mb-0">
-                      <span class="text-success text-sm font-weight-bolder"
-                        >+1% </span
-                      >than yesterday
-                    </p>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header p-3 pt-2 bg-transparent">
-                    <div
-                      class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute"
-                    >
-                      <i class="material-icons opacity-10">person_add</i>
-                    </div>
-                    <div class="text-end pt-1">
-                      <p class="text-sm mb-0 text-capitalize">Followers</p>
-                      <h4 class="mb-0">+91</h4>
-                    </div>
-                  </div>
-
-                  <hr class="horizontal my-0 dark" />
-                  <div class="card-footer p-3">
-                    <p class="mb-0">Just updated</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row mt-4">
-             
-                <div class="card mb-4">
-                  <div class="d-flex">
-                    <div
-                      class="icon icon-shape icon-lg bg-gradient-success shadow text-center border-radius-xl mt-n3 ms-4"
-                    >
-                      <i class="material-icons opacity-10" aria-hidden="true"
-                        >language</i
+              <!--6  jars -->
+              <div class="row">
+                <div class="col-lg-5 col-sm-5">
+                  <div class="card mb-3">
+                    <div class="card-header p-3 pt-2">
+                      <div
+                        class="icon icon-lg icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute"
                       >
+                        <i class="material-icons opacity-10">weekend</i>
+                      </div>
+                      <div class="text-end pt-1">
+                        <p class="text-sm mb-0 text-capitalize">Necessities</p>
+                        <h4 class="mb-0">281</h4>
+                      </div>
                     </div>
-                    <h6 class="mt-3 mb-2 ms-3">Sales by Country</h6>
+
+                    <hr class="dark horizontal my-0" />
+                    <div class="card-footer p-3">
+                      <p class="mb-0">
+                        <span class="text-success text-sm font-weight-bolder"
+                          >+55% </span
+                        >than last week
+                      </p>
+                    </div>
                   </div>
-                  <div class="card-body p-3">
-                    <div class="row">
-                      <div class="col-lg-6 col-md-7">
-                        <div class="table-responsive">
-                          <table class="table align-items-center">
-                            <tbody>
-                              <tr>
-                                <td class="w-30">
-                                  <div
-                                    class="d-flex px-2 py-1 align-items-center"
-                                  >
-                                    <div>
-                                      <img
-                                        src="./assets/img/icons/flags/US.png"
-                                        alt="Country flag"
-                                      />
-                                    </div>
-                                    <div class="ms-4">
-                                      <p class="text-xs font-weight-bold mb-0">
-                                        Country:
-                                      </p>
-                                      <h6
-                                        class="text-sm font-weight-normal mb-0"
-                                      >
-                                        United States
-                                      </h6>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Sales:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      2500
-                                    </h6>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Value:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      $230,900
-                                    </h6>
-                                  </div>
-                                </td>
-                                <td class="align-middle text-sm">
-                                  <div class="col text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Bounce:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      29.9%
-                                    </h6>
-                                  </div>
-                                </td>
-                              </tr>
 
-                              <tr>
-                                <td class="w-30">
-                                  <div
-                                    class="d-flex px-2 py-1 align-items-center"
-                                  >
-                                    <div>
-                                      <img
-                                        src="./assets/img/icons/flags/DE.png"
-                                        alt="Country flag"
-                                      />
-                                    </div>
-                                    <div class="ms-4">
-                                      <p class="text-xs font-weight-bold mb-0">
-                                        Country:
-                                      </p>
-                                      <h6
-                                        class="text-sm font-weight-normal mb-0"
-                                      >
-                                        Germany
-                                      </h6>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Sales:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      3.900
-                                    </h6>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Value:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      $440,000
-                                    </h6>
-                                  </div>
-                                </td>
-                                <td class="align-middle text-sm">
-                                  <div class="col text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Bounce:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      40.22%
-                                    </h6>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td class="w-30">
-                                  <div
-                                    class="d-flex px-2 py-1 align-items-center"
-                                  >
-                                    <div>
-                                      <img
-                                        src="./assets/img/icons/flags/GB.png"
-                                        alt="Country flag"
-                                      />
-                                    </div>
-                                    <div class="ms-4">
-                                      <p class="text-xs font-weight-bold mb-0">
-                                        Country:
-                                      </p>
-                                      <h6
-                                        class="text-sm font-weight-normal mb-0"
-                                      >
-                                        Great Britain
-                                      </h6>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Sales:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      1.400
-                                    </h6>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Value:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      $190,700
-                                    </h6>
-                                  </div>
-                                </td>
-                                <td class="align-middle text-sm">
-                                  <div class="col text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Bounce:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      23.44%
-                                    </h6>
-                                  </div>
-                                </td>
-                              </tr>
-
-                              <tr>
-                                <td class="w-30">
-                                  <div
-                                    class="d-flex px-2 py-1 align-items-center"
-                                  >
-                                    <div>
-                                      <img
-                                        src="./assets/img/icons/flags/BR.png"
-                                        alt="Country flag"
-                                      />
-                                    </div>
-                                    <div class="ms-4">
-                                      <p class="text-xs font-weight-bold mb-0">
-                                        Country:
-                                      </p>
-                                      <h6
-                                        class="text-sm font-weight-normal mb-0"
-                                      >
-                                        Brasil
-                                      </h6>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Sales:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      562
-                                    </h6>
-                                  </div>
-                                </td>
-                                <td>
-                                  <div class="text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Value:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      $143,960
-                                    </h6>
-                                  </div>
-                                </td>
-                                <td class="align-middle text-sm">
-                                  <div class="col text-center">
-                                    <p class="text-xs font-weight-bold mb-0">
-                                      Bounce:
-                                    </p>
-                                    <h6 class="text-sm font-weight-normal mb-0">
-                                      32.14%
-                                    </h6>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                  <div class="card mb-3">
+                    <div class="card-header p-3 pt-2">
+                      <div
+                        class="icon icon-lg icon-shape bg-gradient-primary shadow-primary shadow text-center border-radius-xl mt-n4 position-absolute"
+                      >
+                        <i class="material-icons opacity-10">leaderboard</i>
                       </div>
-                      <div class="col-lg-6 col-md-5">
-                        <div id="map" class="mt-0 mt-lg-n4"></div>
+                      <div class="text-end pt-1">
+                        <p class="text-sm mb-0 text-capitalize">
+                          Financial Freedom
+                        </p>
+                        <h4 class="mb-0">2,300</h4>
                       </div>
+                    </div>
+
+                    <hr class="dark horizontal my-0" />
+                    <div class="card-footer p-3">
+                      <p class="mb-0">
+                        <span class="text-success text-sm font-weight-bolder"
+                          >+3% </span
+                        >than last month
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-header p-3 pt-2">
+                      <div
+                        class="icon icon-lg icon-shape bg-gradient-primary shadow-primary shadow text-center border-radius-xl mt-n4 position-absolute"
+                      >
+                        <i class="material-icons opacity-10">leaderboard</i>
+                      </div>
+                      <div class="text-end pt-1">
+                        <p class="text-sm mb-0 text-capitalize">
+                          Long-term savings
+                        </p>
+                        <h4 class="mb-0">2,300</h4>
+                      </div>
+                    </div>
+
+                    <hr class="dark horizontal my-0" />
+                    <div class="card-footer p-3">
+                      <p class="mb-0">
+                        <span class="text-success text-sm font-weight-bolder"
+                          >+3% </span
+                        >than last month
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-sm-5 mt-sm-0 mt-4">
+                  <div class="card mb-3">
+                    <div class="card-header p-3 pt-2 bg-transparent">
+                      <div
+                        class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute"
+                      >
+                        <i class="material-icons opacity-10">store</i>
+                      </div>
+                      <div class="text-end pt-1">
+                        <p class="text-sm mb-0 text-capitalize">Education</p>
+                        <h4 class="mb-0">34k</h4>
+                      </div>
+                    </div>
+
+                    <hr class="horizontal my-0 dark" />
+                    <div class="card-footer p-3">
+                      <p class="mb-0">
+                        <span class="text-success text-sm font-weight-bolder"
+                          >+1% </span
+                        >than yesterday
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card mb-3">
+                    <div class="card-header p-3 pt-2 bg-transparent">
+                      <div
+                        class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute"
+                      >
+                        <i class="material-icons opacity-10">person_add</i>
+                      </div>
+                      <div class="text-end pt-1">
+                        <p class="text-sm mb-0 text-capitalize">Play</p>
+                        <h4 class="mb-0">+91</h4>
+                      </div>
+                    </div>
+
+                    <hr class="horizontal my-0 dark" />
+                    <div class="card-footer p-3">
+                      <p class="mb-0">Just updated</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header p-3 pt-2 bg-transparent">
+                      <div
+                        class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute"
+                      >
+                        <i class="material-icons opacity-10">person_add</i>
+                      </div>
+                      <div class="text-end pt-1">
+                        <p class="text-sm mb-0 text-capitalize">Give</p>
+                        <h4 class="mb-0">+91</h4>
+                      </div>
+                    </div>
+
+                    <hr class="horizontal my-0 dark" />
+                    <div class="card-footer p-3">
+                      <p class="mb-0">Just updated</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-                <!-- Left column -->
-          <div class="col-3">
+          <!-- Right column -->
+          <div class="col-4">
+            <!-- USD rate -->
             <div class="row mt-4">
               <div class="card mb-4">
+                <!-- header -->
                 <div class="d-flex">
                   <div
                     class="icon icon-shape icon-lg bg-gradient-success shadow text-center border-radius-xl mt-n3 ms-4"
@@ -800,25 +602,37 @@
                   </div>
                   <h6 class="mt-3 mb-2 ms-3">USD exchange rate</h6>
                 </div>
+                <!-- body -->
                 <div class="card-body p-3">
                   <div class="row">
                     <div class="col-lg-12 col-md-7">
                       <div class="table-responsive">
                         <table class="table align-items-center">
                           <tbody>
+                            <!-- Euro -->
                             <tr>
-                              <td class="w-30">
+                              <td>
                                 <div
                                   class="d-flex px-2 py-1 align-items-center"
                                 >
                                   <div>
+                                    <img
+                                      src="https://assets.msn.com/weathermapdata/1/static/finance/taskbar/countryflag/eu.svg"
+                                      style="
+                                        display: inline-block;
+                                        width: 2em;
+                                        height: 2em;
+                                        vertical-align: middle;
+                                      "
+                                    />
+                                  </div>
                                   <div class="ms-4">
                                     <p class="text-xs font-weight-bold mb-0">
                                       Related Currencies:
                                     </p>
-                                    <h6
-                                      class="text-sm font-weight-normal mb-0"
-                                    >USD/EUR                                    </h6>
+                                    <h6 class="text-sm font-weight-normal mb-0">
+                                      USD/EUR
+                                    </h6>
                                   </div>
                                 </div>
                               </td>
@@ -832,9 +646,83 @@
                                   </h6>
                                 </div>
                               </td>
-                             
                             </tr>
-                       
+                            <!-- China -->
+                            <tr>
+                              <td>
+                                <div
+                                  class="d-flex px-2 py-1 align-items-center"
+                                >
+                                  <div>
+                                    <img
+                                      src="https://assets.msn.com/weathermapdata/1/static/finance/taskbar/countryflag/cn.svg"
+                                      style="
+                                        display: inline-block;
+                                        width: 2em;
+                                        height: 2em;
+                                        vertical-align: middle;
+                                      "
+                                    />
+                                  </div>
+                                  <div class="ms-4">
+                                    <p class="text-xs font-weight-bold mb-0">
+                                      Related Currencies:
+                                    </p>
+                                    <h6 class="text-sm font-weight-normal mb-0">
+                                      USD/CNY
+                                    </h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="text-center">
+                                  <p class="text-xs font-weight-bold mb-0">
+                                    Rate:
+                                  </p>
+                                  <h6 class="text-sm font-weight-normal mb-0">
+                                    ¥7.1273
+                                  </h6>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- Japan -->
+                            <tr>
+                              <td>
+                                <div
+                                  class="d-flex px-2 py-1 align-items-center"
+                                >
+                                  <div>
+                                    <img
+                                      src="https://assets.msn.com/weathermapdata/1/static/finance/taskbar/countryflag/jp.svg"
+                                      style="
+                                        display: inline-block;
+                                        width: 2em;
+                                        height: 2em;
+                                        vertical-align: middle;
+                                      "
+                                    />
+                                  </div>
+                                  <div class="ms-4">
+                                    <p class="text-xs font-weight-bold mb-0">
+                                      Related Currencies:
+                                    </p>
+                                    <h6 class="text-sm font-weight-normal mb-0">
+                                      USD/JPY
+                                    </h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <div class="text-center">
+                                  <p class="text-xs font-weight-bold mb-0">
+                                    Rate:
+                                  </p>
+                                  <h6 class="text-sm font-weight-normal mb-0">
+                                    ¥139.340
+                                  </h6>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
                       </div>
@@ -845,76 +733,43 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>        
-        </div>
-        </div>
-      </div>
-       
 
-        <footer class="footer py-4">
-          <div class="container-fluid">
-            <div class="row align-items-center justify-content-lg-between">
-              <div class="col-lg-6 mb-lg-0 mb-4">
-                <div
-                  class="copyright text-center text-sm text-muted text-lg-start"
-                >
-                  ©
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  , made with <i class="fa fa-heart"></i> by
-                  <a
-                    href="https://www.creative-tim.com"
-                    class="font-weight-bold"
-                    target="_blank"
-                    >Creative Tim</a
-                  >
-                  for a better web.
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <ul
-                  class="nav nav-footer justify-content-center justify-content-lg-end"
-                >
-                  <li class="nav-item">
-                    <a
-                      href="https://www.creative-tim.com"
-                      class="nav-link text-muted"
-                      target="_blank"
-                      >Creative Tim</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="https://www.creative-tim.com/presentation"
-                      class="nav-link text-muted"
-                      target="_blank"
-                      >About Us</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="https://www.creative-tim.com/blog"
-                      class="nav-link text-muted"
-                      target="_blank"
-                      >Blog</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      href="https://www.creative-tim.com/license"
-                      class="nav-link pe-0 text-muted"
-                      target="_blank"
-                      >License</a
-                    >
-                  </li>
-                </ul>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/MXCvtC0HqLE"
+                  title="the student guide to personal finance 💸 adulting 101"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
           </div>
-        </footer>
+        </div>
       </div>
+
+      <footer class="footer py-4" style="position: fixed; bottom: 0">
+        <div class="row" style="text-align: center">
+          <!-- <div class="col-lg-12 mb-lg-0 mb-4"> -->
+          <div class="copyright text-center text-sm text-muted text-lg-start">
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            , made with <i class="fa fa-heart"></i> by
+            <a
+              href="https://www.creative-tim.com"
+              class="font-weight-bold"
+              target="_blank"
+              >Tan Nguyen</a
+            >
+            for a better future.
+          </div>
+          <!-- </div> -->
+        </div>
+        <!-- </div> -->
+      </footer>
     </main>
 
     <div class="fixed-plugin">
