@@ -106,6 +106,7 @@
 
 html {
   height: 100vh;
+  background-color: #000;
 }
 
 .main-content {
@@ -28660,58 +28661,6 @@ span.flatpickr-weekday {
   right: 28px;
 }
 
-/* PrismJS 1.23.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
-code[class*="language-"],
-pre[class*="language-"] {
-  color: black;
-  background: none;
-  text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  font-size: 1em;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
-  background: #b3d4fc;
-}
-
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-code[class*="language-"]::selection,
-code[class*="language-"] ::selection {
-  text-shadow: none;
-  background: #b3d4fc;
-}
-
-@media print {
-  code[class*="language-"],
-  pre[class*="language-"] {
-    text-shadow: none;
-  }
-}
-
 /* Code blocks */
 pre[class*="language-"] {
   padding: 1em;
@@ -28924,7 +28873,7 @@ pre[class*="language-"] {
 
 /*# sourceMappingURL=dashboard-free.css.map */
 
-/* % */
+/* Percentage bar */
 
 #card1 .bar {
   height: 1rem;
@@ -28945,10 +28894,12 @@ pre[class*="language-"] {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
+
 #navbar {
   border-radius: 10px;
   width: 100%;
@@ -28958,7 +28909,28 @@ pre[class*="language-"] {
 }
 
 #ads {
-  /* display: inline-block; */
   padding-right: 100%;
-  animation: slide 60s linear infinite;
+  animation: slide 40s linear infinite;
+}
+
+/* Hover */
+#card1frame {
+  position: relative;
+  display: inline-block;
+}
+
+#card1frame::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền khi hover */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#card1frame:hover::after {
+  opacity: 1;
 }
