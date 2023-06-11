@@ -104,6 +104,14 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
+
+.main-content {
+  height: 100vh;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -434,19 +442,19 @@ select:disabled {
   display: none !important;
 }
 
-button,
+/* button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
-}
+} */
 
-button:not(:disabled),
+/* button:not(:disabled),
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled) {
   cursor: pointer;
-}
+} */
 
 ::-moz-focus-inner {
   padding: 0;
@@ -699,7 +707,7 @@ progress {
 .container-lg,
 .container-xl,
 .container-xxl {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 0rem;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -759,8 +767,8 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  /* margin-right: calc(-0.5 * var(--bs-gutter-x)); */
+  /* margin-left: calc(-0.5 * var(--bs-gutter-x)); */
 }
 
 .row > * {
@@ -2901,7 +2909,6 @@ textarea.form-control-lg {
 .form-control-color.form-control-lg {
   height: unset;
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   .form-select {
@@ -10775,7 +10782,10 @@ fieldset:disabled .btn {
 }
 
 .text-dark-blue {
-  color: #1a237e !important;
+  color: #4682b4 !important;
+}
+.text-dark {
+  color: #000000 !important;
 }
 
 .text-body {
@@ -28913,3 +28923,42 @@ pre[class*="language-"] {
 }
 
 /*# sourceMappingURL=dashboard-free.css.map */
+
+/* % */
+
+#card1 .bar {
+  height: 1rem;
+  border-radius: 0.6rem;
+  border: 0.2rem solid white;
+  margin-top: 0.5rem;
+}
+
+#card1 .bar span {
+  display: block;
+  height: 100%;
+  border-radius: 0.3rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* framework */
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#navbar {
+  border-radius: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#ads {
+  /* display: inline-block; */
+  padding-right: 100%;
+  animation: slide 60s linear infinite;
+}
